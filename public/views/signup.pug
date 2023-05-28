@@ -1,0 +1,23 @@
+doctype html
+head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Signup
+    body
+        h1 創建帳號
+        form(action='/signup' method='post')
+            fieldset
+                label 名稱
+                input(type="text" name="username" required='')
+                br
+                label 帳號
+                input(type='email' name='id' required='')
+                br
+                label 密碼
+                input#password(type='password' name='password' required='')
+                br
+                button(type='reset') 重新
+                button(type='submit') 創建帳號
+        a(href='/login')
+            button 登入
